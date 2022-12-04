@@ -1,0 +1,103 @@
+.container{
+    width: 360px;
+    display: grid;
+    background-color: bisque;
+    grid-gap: 10px;
+    grid-template-rows: 30px auto auto auto auto auto ;
+    grid-template-columns: auto auto auto auto;
+    border: 1px black solid;
+}
+
+.item1{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    box-sizing: border-box;
+}
+
+.item2{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 2px black solid;
+    height: 100px;
+
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.button-7{
+    grid-row: 3;
+    grid-column: 1;
+}
+.button-8{
+    grid-row: 3;
+    grid-column: 2;
+}
+.button-9{
+    grid-row: 3;
+    grid-column: 3;
+}
+.button-divide{
+    grid-row: 3;
+    grid-column: 4;
+}
+
+.button-4{
+    grid-row: 4;
+    grid-column: 1;
+}
+.button-5{
+    grid-row: 4;
+    grid-column: 2;
+}
+.button-6{
+    grid-row: 4;
+    grid-column: 3;
+}
+.button-star{
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.button-1{
+    grid-row: 5;
+    grid-column: 1;
+}
+.button-2{
+    grid-row: 5;
+    grid-column: 2;
+}
+.button-3{
+    grid-row: 5;
+    grid-column: 3;
+}
+.button-minus{
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.button-0{
+    grid-row: 6;
+    grid-column: 1;
+}
+.button-C{
+    grid-row: 6;
+    grid-column: 2;
+}
+.button-equal{
+    grid-row: 6;
+    grid-column: 3;
+}
+.button-plus{
+    grid-row: 6;
+    grid-column: 4;
+}
+.button{
+    background-color: blue;
+    height: 40px;
+    border-radius: 5px;
+}
