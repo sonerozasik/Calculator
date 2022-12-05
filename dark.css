@@ -1,3 +1,24 @@
 .button{
-    background-color: brown;
+    background-color:#555555;
+    color:white
+}
+
+.button:hover{
+    background-color:#444444;
+}
+
+.item2{
+    background-color: #1476b3;
+    border: 5px white solid;
+}
+
+.container{
+    background-color: #333333;
+}
+body{
+    color:white;
+}
+
+#sun-icon{
+    display: none;
 }

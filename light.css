@@ -1,3 +1,19 @@
 .button{
-    background-color: beige;
+    background-color:#cccccc;
+}
+
+.button:hover{
+    background-color:#bbbbbb;
+}
+.item2{
+    background-color: #74c1f0;
+    border: 5px black solid;
+}
+
+.container{
+    background-color: #eeeeee;
+}
+
+#moon-icon{
+    display: none;
 }

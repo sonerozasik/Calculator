@@ -19,9 +19,8 @@
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 5;
-    border: 2px black solid;
     height: 100px;
-
+    position: relative;
 }
 .clearfix::after {
     content: "";
@@ -100,4 +99,16 @@
     background-color: blue;
     height: 40px;
     border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+#expression{
+    top: 10px;
+    right: 10px;
+}
+#result{
+    bottom: 10px;
+    right: 10px;
+    font-size: xx-large;
+    font-weight: bold;
 }
