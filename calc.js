@@ -7,7 +7,6 @@ function changeMode(){
         document.getElementById("stylesheet").href="./light.css";
         darkmode=0;
     }
-    console.log(document.getElementById("stylesheet").href)
 }
 
 
@@ -36,8 +35,6 @@ function stateController(type,value){
             else if(state==2){
                 S3(resultvalue);
                 S0('e');
-                console.log(resultvalue)
-                console.log(operand1)
             }
             else if(state==0){
                 S0('e')
