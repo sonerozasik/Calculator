@@ -2,9 +2,12 @@
     background-color:#555555;
     color:white
 }
+#button-equal{
+    background-color:#1476b3;
+}
 
-.button:hover{
-    background-color:#444444;
+#button-equal:hover{
+    background-color: #4eaae4;
 }
 
 .item2{

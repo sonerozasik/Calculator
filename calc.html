@@ -11,36 +11,36 @@
     <script src="calc.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="S0('c')">
     <div class="container text-center p-2">
         <div class="item1 d-flex justify-content-between align-items-center p-1"> 
             <span class="fs-5 fw-normal">Calculator</span>
             <div class="">
                 <i class="fa-sharp fa-solid fa-arrow-rotate-right m-1"></i>
-                <i id="sun-icon" class="fa-sharp fa-solid fa-sun" onclick="change()"></i>
-                <i id="moon-icon" class="fa-sharp fa-solid fa-moon" onclick="change()"></i>
+                <i id="sun-icon" class="fa-sharp fa-solid fa-sun" onclick="changeMode()"></i>
+                <i id="moon-icon" class="fa-sharp fa-solid fa-moon" onclick="changeMode()"></i>
             </div>
         </div>
         <div class="item2">
-            <span id="expression" class="d-block position-absolute">6*6</span>
-            <span id="result" class="d-block position-absolute">36</span>
+            <span id="expression" class="d-block position-absolute"></span>
+            <span id="result" class="d-block position-absolute"></span>
         </div>
-        <input type="button" class="button-7 button" value="7"></input>
-        <input type="button" class="button-8 button" value="8"></input>
-        <input type="button" class="button-9 button" value="9"></input>
-        <input type="button" class="button-divide button" value="/"></input>
-        <input type="button" class="button-4 button" value="4"></input>
-        <input type="button" class="button-5 button" value="5"></input>
-        <input type="button" class="button-6 button" value="6"></input>
-        <input type="button" class="button-star button" value="*"></input>
-        <input type="button" class="button-1 button" value="1"></input>
-        <input type="button" class="button-2 button" value="2"></input>
-        <input type="button" class="button-3 button" value="3"></input>
-        <input type="button" class="button-minus button" value="-"></input>
-        <input type="button" class="button-0 button" value="0"></input>
-        <input type="button" class="button-C button" value="C"></input>
-        <input type="button" class="button-equal button" value="="></input>
-        <input type="button" class="button-plus button" value="+"></input>
+        <input id="button-7" type="button" class=" button" value="7" onclick="stateController('d',7)"></input>
+        <input id="button-8" type="button" class=" button" value="8" onclick="stateController('d',8)"></input>
+        <input id="button-9" type="button" class="button" value="9" onclick="stateController('d',9)"></input>
+        <input id="button-divide" type="button" class="button" value="/" onclick="stateController('o','/')"></input>
+        <input id="button-4" type="button" class="button" value="4" onclick="stateController('d',4)"></input>
+        <input id="button-5" type="button" class="button" value="5" onclick="stateController('d',5)"></input>
+        <input id="button-6" type="button" class="button" value="6" onclick="stateController('d',6)"></input>
+        <input id="button-star" type="button" class="button" value="*" onclick="stateController('o','*')"></input>
+        <input id="button-1" type="button" class="button" value="1" onclick="stateController('d',1)"></input>
+        <input id="button-2" type="button" class="button" value="2" onclick="stateController('d',2)"></input>
+        <input id="button-3" type="button" class="button" value="3" onclick="stateController('d',3)"></input>
+        <input id="button-minus" type="button" class="button" value="-" onclick="stateController('o','-')"></input>
+        <input id="button-0" type="button" class="button" value="0" onclick="stateController('d',0)"></input>
+        <input id="button-C" type="button" class="button" value="C" onclick="stateController('c',0)"></input>
+        <input id="button-equal" type="button" class="button" value="=" onclick="stateController('e','=')"></input>
+        <input id="button-plus" type="button" class="button" value="+" onclick="stateController('o','+')"></input>
 
 
 

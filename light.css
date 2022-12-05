@@ -2,9 +2,13 @@
     background-color:#cccccc;
 }
 
-.button:hover{
-    background-color:#bbbbbb;
+#button-equal{
+    background-color: #74c1f0;
 }
+#button-equal:hover{
+    background-color: #4eaae4;
+}
+
 .item2{
     background-color: #74c1f0;
     border: 5px black solid;
