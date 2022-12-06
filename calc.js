@@ -54,6 +54,7 @@ function S0(op){
         else if(operator =='-') resultvalue = operand1 - operand2;
         else if(operator =='*') resultvalue = operand1 * operand2;
         else if(operator =='/') resultvalue = operand1 / operand2;
+        resultvalue=Number(resultvalue.toFixed(2));
         result.textContent=resultvalue;
         expression.textContent=operand1+operator+operand2+'=';
     }
@@ -64,6 +65,7 @@ function S0(op){
         else if(operator =='-') resultvalue=operand1-operand2;
         else if(operator =='*') resultvalue=operand1*operand2;
         else if(operator =='/') resultvalue=operand1/operand2;
+        resultvalue=Number(resultvalue.toFixed(2));
         result.textContent=resultvalue;
     }
     else if(op=='c'){
@@ -108,6 +110,7 @@ function S2(op){
         else if(operator =='-') operand1-=operand2;
         else if(operator =='*') operand1*=operand2;
         else if(operator =='/') operand1/=operand2;
+        operand1=Number(operand1.toFixed(2));
         resultvalue=operand1;
         expression.textContent = operand1 + op;
         operator=op;
@@ -129,7 +132,7 @@ function S3(number){
     else{
         operand2=operand2*10 + number;
     }
-    expression.textContent=operand1+operator+operand2; 
+    expression.textContent=operand1 + operator + operand2; 
     result.textContent=operand2;
     state=3;
 }

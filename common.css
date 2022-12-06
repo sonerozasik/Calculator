@@ -115,6 +115,6 @@
     font-size: xx-large;
     font-weight: bold;
 }
-i:hover{
+#changemode-icon:hover{
     cursor: pointer;
 }
